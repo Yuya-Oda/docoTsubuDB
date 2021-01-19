@@ -1,11 +1,16 @@
 package model;
 
-import java.util.List;
+import dao.MutterDAO;
+
+/*
+ * つぶやき投稿に関する処理をおこなうモデル/DAO利用
+ */
 
 public class PostMutterLogic {
 
-	public void execute(Mutter mutter, List<Mutter> mutterList) {
-		mutterList.add(0, mutter); // 先頭に追加
+	public void execute(Mutter mutter) {
+		MutterDAO dao = new MutterDAO();
+		dao.create(mutter);
 	}
 
 }

@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>どこつぶへようこそ</h1>
-<form action="/docoTsubuEL-JSTL/Login_EL" method="post">
+<form action="/docoTsubuDB/Login_DB" method="post">
 ユーザー名：<input type="text" name="name"><br />
 パスワード：<input type="password" name="pass"><br />
 <br />

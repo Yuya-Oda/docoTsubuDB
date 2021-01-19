@@ -16,7 +16,7 @@ import model.User;
 /**
  * Servlet implementation class Login
  */
-@WebServlet("/Login_EL")
+@WebServlet("/Login_DB")
 public class Login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

@@ -9,6 +9,6 @@
 <body>
 <h1>どことぶログアウト</h1>
 <p>ログアウトしました</p>
-<a href="/docoTsubuEL-JSTL/">トップへ</a>
+<a href="/docoTsubuDB/">トップへ</a>
 </body>
 </html>

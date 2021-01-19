@@ -34,10 +34,10 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 
 <c:out value="${loginUser.name}" />さん、ログイン中
 
-<a href="/docoTsubuEL-JSTL/Logout_EL">ログアウト</a>
+<a href="/docoTsubuDB/Logout_DB">ログアウト</a>
 </p>
-<p><a href="/docoTsubuEL-JSTL/Main_EL">更新</a></p>
-<form action="/docoTsubuEL-JSTL/Main_EL" method="post">
+<p><a href="/docoTsubuDB/Main_DB">更新</a></p>
+<form action="/docoTsubuDB/Main_DB" method="post">
 <input type="text" name="text">
 <input type="submit" value="つぶやく">
 </form>

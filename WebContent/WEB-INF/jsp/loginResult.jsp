@@ -16,10 +16,10 @@
 <% if (loginUser != null) { %>
 	<p>ログインに成功しました</p>
 	<p>ようこそ<%= loginUser.getName() %>さん。</p>
-	<a href="/docoTsubuEL-JSTL/Main_EL">つぶやき投稿・閲覧へ</a>
+	<a href="/docoTsubuDB/Main_DB">つぶやき投稿・閲覧へ</a>
 <% } else { %>
 	<p>ログインに失敗しました</p>
-	<a href="/docoTsubuEL-JSTL/">TOPへ</a>
+	<a href="/docoTsubuDB/">TOPへ</a>
 <% }  %>
 </body>
 </html>
