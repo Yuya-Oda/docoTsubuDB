@@ -75,4 +75,29 @@ public class MutterDAO {
 		return true;
 	}
 
+	public boolean remove(String name) {
+		// データベース接続
+		try(Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS )){
+
+			// DELETE文の準備(idは自動連番なので指定しなくてよい)
+			 //DELETE FROM (テーブル名) WHERE (更新するデータの条件)
+			String sql = "DELETE FROM MUTTER WHERE NAME= ?/";
+
+			PreparedStatement pStmt = conn.prepareStatement(sql);
+
+			// DELETE文中の「？」に使用する値を設定しSQLを完成
+			pStmt.setString(1, name);
+
+			// DELETE文を実行(resultには追加された行数が代入される)
+			int result = pStmt.executeUpdate();
+				return (result == 1);
+
+			} catch (SQLException e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			}
+		return false;
+
+		}
+
 }
