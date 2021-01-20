@@ -27,17 +27,18 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 <title>どこつぶ</title>
 </head>
 <body>
-<h1>どこつぶメイン</h1>
+<h1>どこつぶマイページ</h1>
 
 <p>
 <%--<%= loginUser.getName() %>さん、ログイン中 --%>
 
-<c:out value="${loginUser.name}" />さん、ログイン中
+<c:out value="${loginUser.name}" />さんのページ
 
 <a href="/docoTsubuDB/Logout_DB">ログアウト</a>
 </p>
 <p><a href="/docoTsubuDB/Main_DB">更新</a></p>
-<p><a href="/docoTsubuDB/MyPage_DB">マイページ</a></p>
+<a href="/docoTsubuDB/Main_DB">つぶやき投稿・閲覧へ</a><br />
+<br />
 <form action="/docoTsubuDB/Main_DB" method="post">
 <input type="text" name="text">
 <input type="submit" value="つぶやく">
@@ -59,6 +60,8 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 	<p><c:out value="${ mutter.userName }" />:
 		<c:out value="${ mutter.text }"  /></p>
 </c:forEach>
+
+
 
 
 </body>

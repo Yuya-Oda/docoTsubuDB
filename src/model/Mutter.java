@@ -4,9 +4,9 @@ import java.io.Serializable;
 
 public class Mutter implements Serializable{
 
-	private int id;	// ID
-	private String userName; //ユーザー名
- 	private String text; //つぶやきの内容
+	private int id;			// ID
+	private String userName; 	//ユーザー名
+ 	private String text; 		//つぶやきの内容
 
 	public Mutter(String userName, String text) {
 		this.userName = userName;
